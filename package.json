@@ -4,6 +4,7 @@
   "description": "test",
   "main": "index.html",
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "npm run lite",
     "lite": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,7 +20,9 @@
   },
   "homepage": "https://github.com/work-beardofdoom/Front-End-Web-Development#readme",
   "devDependencies": {
-    "minimist":">=1.2.3",
     "lite-server": "^2.5.4"
+  },
+  "resolutions": {
+    "minimist": "^1.2.5"
   }
 }
